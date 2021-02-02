@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Button from '@material-ui/core/Button';
-import callMe from '../scripts/createTableScript.js'
 export default class Home extends React.Component {
 
     constructor(props) {
@@ -15,7 +14,9 @@ export default class Home extends React.Component {
 
 
     ButtonClick(){
-        <callMe/>
+        fetch('http://localhost:3000/')
+            .catch((error) => console.log(error))
+
     }
 
     render() {
